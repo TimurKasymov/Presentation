@@ -1,6 +1,32 @@
-<body>
-  <app-nav-menu></app-nav-menu>
-  <div class="container">
-    <router-outlet></router-outlet>
-  </div>
-</body>
+<div class="tool-bar-theme">
+<main >
+    <mat-toolbar color="accent" >
+      <button (click)="drawer.toggle()"
+        mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon color="primary">menu</mat-icon>
+      </button>
+      <span [routerLink]="['PersonalAccount/home']">Community</span><div class="name" *ngIf="account.account">{{account.account['name']}}</div>
+      <span class="example-spacer"></span>
+      <div class="diva"><button [routerLink]="route.url" class="btn" *ngFor="let route of ListOfLinks.listOfLinks"
+                                mat-raised-button color="primary">
+          <mat-icon aria-hidden="false" aria-label="Example home icon">{{route.icon}}</mat-icon>
+          {{route.name}}
+      </button></div>
+    </mat-toolbar>
+  <mat-drawer-container class="example-container">
+    <mat-drawer position="start" #drawer class="example-sidenav" mode="side">
+        <div class="drawerFeed" *ngIf="DrawerFeed.on"><button class="drawer" *ngFor="let route of drawerFeedBox"
+                                                         [routerLink]="route.url">
+          {{route.name}} <mat-icon class="iconDrawer">{{route.icon}}</mat-icon>
+        </button> </div>
+    </mat-drawer>
+    <div class="wrapper">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-drawer-container>
+</main>
+<footer>
+  <div class="footerDiv"> Все права защищены. </div>
+</footer>
+</div>
+

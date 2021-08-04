@@ -1,16 +1,117 @@
-/* You can add global styles to this file, and also import other style files */
 
-/* Provide sufficient contrast against white background */
-a {
-  color: #0366d6;
+
+
+html, body { height: 100%; width: 100%;
+}
+body { margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.drawerFeed{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1em;
 }
 
-code {
-  color: #e01a76;
+.drawer:hover{
+  background-color: gold;
+
 }
 
-.btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+.drawer{
+  min-height: 15px;
+  text-align: center;
+  background-color: lightblue;
+  margin: 1em;
+  padding: 2em;
+  border-radius: 40%;
+  transition: all 1s ease 0s;
+}
+
+mat-drawer-container{
+  height: 100%;
+}
+
+mat-icon{
+  border: none;
+  box-shadow: none;
+
+}
+
+mat-drawer-content{
+  background-color: white;
+}
+
+.drawer-content{
+
+}
+
+.diva{
+  align-items: center;
+  position: relative;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-evenly;
+  min-width: 30%;
+}
+
+mat-toolbar{
+  display: flex;
+  opacity: .9;
+  background-color: royalblue;
+  justify-content: center;
+  align-items: center;
+}
+
+
+mat-drawer{
+  width: 25%;
+  display: flex;
+  min-height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.name{
+  margin-left: 50px;
+  border: 1px dashed black;
+}
+.example-container{
+  display: flex;
+  align-items: center;
+}
+
+main{
+  height: 100%;
+}
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #dbdbdb;
+  width: 100%;
+  align-self: stretch;
+  min-height: 5%;
+}
+
+.tool-bar-theme{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+
+.iconDrawer{
+  margin-left: 10px;
+  padding-top: 15px;
+}
+
+.wrapper{
+  height: 100%;
+  display: flex;
+  justify-content: center;
 }
