@@ -8,7 +8,7 @@
       <e p="bin" t="ExcludeRecursive" />
       <e p="BLL" t="Include">
         <e p="Abstract" t="Include">
-          <e p="IPostService.cs" t="Include" />
+          <e p="IService.cs" t="Include" />
         </e>
         <e p="AccountService.cs" t="Include" />
         <e p="PostService.cs" t="Include" />
@@ -27,12 +27,14 @@
           <e p="tsconfig.e2e.json" t="Include" />
         </e>
         <e p="node_modules\@angular\animations" t="IncludeRecursive" />
+        <e p="node_modules\@angular\cdk" t="IncludeRecursive" />
         <e p="node_modules\@angular\cli" t="IncludeRecursive" />
         <e p="node_modules\@angular\common" t="IncludeRecursive" />
         <e p="node_modules\@angular\compiler" t="IncludeRecursive" />
         <e p="node_modules\@angular\compiler-cli" t="IncludeRecursive" />
         <e p="node_modules\@angular\core" t="IncludeRecursive" />
         <e p="node_modules\@angular\forms" t="IncludeRecursive" />
+        <e p="node_modules\@angular\material" t="IncludeRecursive" />
         <e p="node_modules\@angular\platform-browser" t="IncludeRecursive" />
         <e p="node_modules\@angular\platform-browser-dynamic" t="IncludeRecursive" />
         <e p="node_modules\@angular\platform-server" t="IncludeRecursive" />
@@ -43,6 +45,7 @@
         <e p="node_modules\@angular-devkit\build-webpack" t="IncludeRecursive" />
         <e p="node_modules\@angular-devkit\core" t="IncludeRecursive" />
         <e p="node_modules\@angular-devkit\schematics" t="IncludeRecursive" />
+        <e p="node_modules\@auth0\angular-jwt" t="IncludeRecursive" />
         <e p="node_modules\@ngtools\webpack" t="IncludeRecursive" />
         <e p="node_modules\@nguniversal\module-map-ngfactory-loader" t="IncludeRecursive" />
         <e p="node_modules\@types" t="IncludeRecursive">
@@ -60,6 +63,7 @@
         <e p="node_modules\base64-js" t="IncludeRecursive" />
         <e p="node_modules\blocking-proxy" t="IncludeRecursive" />
         <e p="node_modules\bootstrap" t="IncludeRecursive" />
+        <e p="node_modules\browserslist" t="IncludeRecursive" />
         <e p="node_modules\canonical-path" t="IncludeRecursive" />
         <e p="node_modules\codelyzer" t="IncludeRecursive" />
         <e p="node_modules\commander" t="IncludeRecursive" />
@@ -68,8 +72,10 @@
         <e p="node_modules\dependency-graph" t="IncludeRecursive" />
         <e p="node_modules\domino" t="IncludeRecursive" />
         <e p="node_modules\es6-promise" t="IncludeRecursive" />
+        <e p="node_modules\escalade" t="IncludeRecursive" />
         <e p="node_modules\fast-deep-equal" t="IncludeRecursive" />
         <e p="node_modules\fast-json-stable-stringify" t="IncludeRecursive" />
+        <e p="node_modules\hammerjs" t="IncludeRecursive" />
         <e p="node_modules\ini" t="IncludeRecursive" />
         <e p="node_modules\jasmine-core" t="IncludeRecursive" />
         <e p="node_modules\jasmine-spec-reporter" t="IncludeRecursive" />
@@ -167,23 +173,45 @@
             <e p="app.component.ts" t="Include" />
             <e p="app.module.ts" t="Include" />
             <e p="app.server.module.ts" t="Include" />
-            <e p="counter" t="Include">
-              <e p="counter.component.html" t="Include" />
-              <e p="counter.component.spec.ts" t="Include" />
-              <e p="counter.component.ts" t="Include" />
+            <e p="create-account" t="Include">
+              <e p="create-account.component.css" t="Include" />
+              <e p="create-account.component.html" t="Include" />
+              <e p="create-account.component.ts" t="Include" />
+              <e p="error-email" t="Include">
+                <e p="error-email.component.css" t="Include" />
+                <e p="error-email.component.html" t="Include" />
+                <e p="error-email.component.ts" t="Include" />
+              </e>
             </e>
-            <e p="fetch-data" t="Include">
-              <e p="fetch-data.component.html" t="Include" />
-              <e p="fetch-data.component.ts" t="Include" />
+            <e p="InAccountModule" t="Include">
+              <e p="in-account" t="Include">
+                <e p="in-account.component.css" t="Include" />
+                <e p="in-account.component.html" t="Include" />
+                <e p="in-account.component.ts" t="Include" />
+              </e>
+              <e p="in-account-module" t="Include">
+                <e p="in-account-module.module.ts" t="Include" />
+                <e p="routs.ts" t="Include" />
+              </e>
+              <e p="update-account" t="Include">
+                <e p="update-account.component.css" t="Include" />
+                <e p="update-account.component.html" t="Include" />
+                <e p="update-account.component.ts" t="Include" />
+              </e>
             </e>
-            <e p="home" t="Include">
-              <e p="home.component.html" t="Include" />
-              <e p="home.component.ts" t="Include" />
+            <e p="login" t="Include">
+              <e p="login.component.css" t="Include" />
+              <e p="login.component.html" t="Include" />
+              <e p="login.component.ts" t="Include" />
             </e>
-            <e p="nav-menu" t="Include">
-              <e p="nav-menu.component.css" t="Include" />
-              <e p="nav-menu.component.html" t="Include" />
-              <e p="nav-menu.component.ts" t="Include" />
+            <e p="shared" t="Include">
+              <e p="account-repository.service.ts" t="Include" />
+              <e p="guarder.guard.ts" t="Include" />
+              <e p="http-service.service.ts" t="Include" />
+              <e p="interfaces.service.ts" t="Include" />
+              <e p="list-of-links.service.ts" t="Include" />
+              <e p="routs.service.ts" t="Include" />
+              <e p="shared.module.ts" t="Include" />
             </e>
           </e>
           <e p="assets" t="Include">
@@ -199,6 +227,7 @@
           <e p="polyfills.ts" t="Include" />
           <e p="styles.css" t="Include" />
           <e p="test.ts" t="Include" />
+          <e p="them.scss" t="Include" />
           <e p="tsconfig.app.json" t="Include" />
           <e p="tsconfig.server.json" t="Include" />
           <e p="tsconfig.spec.json" t="Include" />
@@ -217,6 +246,8 @@
         <e p="20210714131824_Models.Designer.cs" t="Include" />
         <e p="20210714132950_FirstMigration.cs" t="Include" />
         <e p="20210714132950_FirstMigration.Designer.cs" t="Include" />
+        <e p="20210722101155_AddJWTToAccount.cs" t="Include" />
+        <e p="20210722101155_AddJWTToAccount.Designer.cs" t="Include" />
         <e p="ApplicationContextModelSnapshot.cs" t="Include" />
       </e>
       <e p="Models" t="Include">
@@ -275,6 +306,6 @@
       </e>
     </e>
     <e p="C:\Users\Тимур\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Тимур\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_.19.01" t="ExcludeRecursive" />
+    <e p="C:\Users\Тимур\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_.19.00" t="ExcludeRecursive" />
   </component>
 </project>

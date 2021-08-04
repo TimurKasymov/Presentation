@@ -1,0 +1,59 @@
+
+
+.image{
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+.wrapper1{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+  background-color: aliceblue;
+}
+h5{
+  padding-top: 2em;
+}
+.title{
+  display: flex;
+  justify-content: space-around;
+  padding: 8px;
+  background-color: bisque;
+}
+.text{
+  display: flex;
+  justify-content: center;
+  flex: 1 1 auto;
+  align-self: center;
+  max-width: 400px;
+}
+p{
+  align-self: center;
+  padding: 10px;
+}
+.card{
+  display: flex;
+  min-height: 400px;
+  min-width: 400px;
+  box-shadow: #dbdbdb;
+  flex-direction: column;
+  margin: 3em;
+}
+.likes{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2em;
+  background-color: lightcoral;
+}
+.icon{
+  display: flex;
+}
+mat-icon{
+  width: 1em;
+  font-size: 2em;
+}

@@ -1,0 +1,29 @@
+<ng-template #saved><h5>Пост сохранён</h5></ng-template>
+
+<form [formGroup]="PostGroup" *ngIf="complete; else saved">
+<div class="wrapper" >
+  <mat-card>
+    <div class="n"><h4>Ваш новый пост</h4></div>
+    <div class="image">
+        <input  type="file" id="input" class="inp-file" formControlName="file">
+    </div>
+    <div class="title">
+      <mat-form-field class="mat-t-f">
+        <mat-label>Title</mat-label>
+        <input matInput class="inp-title" formControlName="title">
+      </mat-form-field>
+    </div>
+    <div class="text">
+      <label> О чём пост? </label>
+      <textarea  cols="20" rows="10" formControlName="text">
+      </textarea>
+    </div>
+    <div class="btn">
+      <div class="forbtn">
+        <button class="btnInto" [disabled]="PostGroup.invalid" mat-raised-button color="primary" (click)="CreatePostInC()"> Создать </button>
+      </div>
+    </div>
+  </mat-card>
+</div>
+</form>
+

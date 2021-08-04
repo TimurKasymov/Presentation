@@ -29,17 +29,43 @@ namespace Community2._0.BLL
                 throw new Exception(e.Message);
             }
         }
-
-        public AccountEntity Get(string email, string password)
+        public List<AccountEntity> GetAllNOTracking()
+        {
+            try
+            {
+                var accs = _repository.GetAll();
+                var accList = accs.ToList();
+                if (accList == null)
+                    throw new Exception("Объект не найден");
+                return accList;
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+        }
+        public AccountEntity Get(string email, string password, bool emailOnly=false)
         {
             try
             {
                 var accounts = _repository.Get(e => e.IsActive && e.Email == email && 
                                                     e.Password == password);
                 var account = accounts.ToList().FirstOrDefault();
-                if (account == null)
-                    return null;
-                return account;
+                if (!emailOnly)
+                {
+                    
+                    if (account == null)
+                        return null;
+                    return account;
+                }
+                else
+                {
+                    var accountsEmail = _repository.Get(e => e.IsActive && e.Email == email);
+                    var accountEmail = accountsEmail.ToList().FirstOrDefault();
+                    if (accountEmail == null)
+                        return null;
+                    return accountEmail;                        
+                }
             }
             catch (Exception e)
             {
@@ -62,7 +88,7 @@ namespace Community2._0.BLL
             }
         }
 
-        public List<AccountEntity> GetAll()
+        public List<AccountEntity> GetAllTracking()
         {
             try
             {

@@ -45,16 +45,36 @@ namespace Community2._0.BLL.Abstract
             }
         }
 
+        public PostEntity Get(string email, string password, bool emailOnly)
+        {
+            throw new NotImplementedException();
+        }
+
         public PostEntity Get(string email, string password)
         {
             throw new NotImplementedException();
         }
 
-        public List<PostEntity> GetAll()
+        public List<PostEntity> GetAllTracking()
         {
             try
             {
                 var posts = _repository.Get(e => e.IsActive);
+                var post = posts.ToList();
+                if (post == null)
+                    throw new Exception("Объект не найден");
+                return post;
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+        }
+        public List<PostEntity> GetAllNOTracking()
+        {
+            try
+            {
+                var posts = _repository.GetAll();
                 var post = posts.ToList();
                 if (post == null)
                     throw new Exception("Объект не найден");

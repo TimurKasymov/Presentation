@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
-namespace Community2._0.Migrations
+namespace Community20.Migrations
 {
     [DbContext(typeof(ApplicationContext))]
     partial class ApplicationContextModelSnapshot : ModelSnapshot
@@ -47,6 +47,9 @@ namespace Community2._0.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<string>("RefreshToken")
+                        .HasColumnType("text");
+
                     b.Property<int>("Role")
                         .HasColumnType("integer");
 
@@ -78,8 +81,8 @@ namespace Community2._0.Migrations
                     b.Property<int>("Likes")
                         .HasColumnType("integer");
 
-                    b.Property<byte[]>("Picture")
-                        .HasColumnType("bytea");
+                    b.Property<string>("Picture")
+                        .HasColumnType("text");
 
                     b.Property<string>("Text")
                         .HasMaxLength(300)

@@ -1,0 +1,36 @@
+
+.signup{
+ padding: 30px;
+
+}
+
+mat-card{
+  max-width: 400px;
+  margin: 2em auto;
+  max-height: 500px;
+  text-align: center;
+}
+
+
+
+mat-form-field{
+  width: 100%;
+ }
+
+.cat{
+  min-width: 400px;
+  background-color: darkred;
+}
+
+.InvalidPasswoed{
+  background-color: gold;
+}
+
+.EmailError{
+  background-color: lightcoral;
+  position: relative;
+}
+
+.loginBtn .createBtn{
+  min-width: 100px;
+}

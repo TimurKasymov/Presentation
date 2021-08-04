@@ -4,60 +4,153 @@
     <projectFile>Community2.0.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cda20936-0ccf-4492-aa92-ba86d57e017b" name="Default Changelist" comment="" />
+    <list default="true" id="cda20936-0ccf-4492-aa92-ba86d57e017b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ClientApp/src/app/InAccountModule/in-account-module/in-account-module.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientApp/src/app/InAccountModule/in-account-module/routs.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientApp/src/app/InAccountModule/in-account/in-account.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientApp/src/app/InAccountModule/in-account/in-account.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientApp/src/app/InAccountModule/in-account/in-account.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientApp/src/app/InAccountModule/update-account/update-account.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientApp/src/app/InAccountModule/update-account/update-account.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientApp/src/app/InAccountModule/update-account/update-account.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientApp/src/app/create-account/error-email/error-email.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientApp/src/app/create-account/error-email/error-email.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientApp/src/app/create-account/error-email/error-email.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientApp/src/app/login/login.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientApp/src/app/login/login.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientApp/src/app/login/login.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientApp/src/app/shared/account-repository.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientApp/src/app/shared/guarder.guard.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientApp/src/app/shared/routs.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ClientApp/src/them.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Migrations/20210722101155_AddJWTToAccount.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Migrations/20210722101155_AddJWTToAccount.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Community2.0.dir/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Community2.0.dir/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Community2.0.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Community2.0.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BLL/Abstract/IPostService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BLL/Abstract/IService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BLL/AccountService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BLL/AccountService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BLL/PostService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/BLL/PostService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientApp/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/ClientApp/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientApp/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/ClientApp/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientApp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/ClientApp/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientApp/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/ClientApp/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientApp/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ClientApp/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientApp/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ClientApp/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientApp/src/app/counter/counter.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientApp/src/app/counter/counter.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientApp/src/app/counter/counter.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientApp/src/app/fetch-data/fetch-data.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientApp/src/app/fetch-data/fetch-data.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientApp/src/app/home/home.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientApp/src/app/home/home.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientApp/src/app/nav-menu/nav-menu.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientApp/src/app/nav-menu/nav-menu.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientApp/src/app/nav-menu/nav-menu.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientApp/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ClientApp/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientApp/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ClientApp/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientApp/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/ClientApp/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientApp/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/ClientApp/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Community2.0.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Community2.0.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/AccountController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/AccountController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Migrations/ApplicationContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Migrations/ApplicationContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Entities/AccountEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Entities/AccountEntity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Entities/BaseEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Entities/BaseEntity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Entities/PostEntity.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Entities/PostEntity.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Security/Services/Abstract/IJwtService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Security/Services/Abstract/IJwtService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Security/Services/JwtService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Security/Services/JwtService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Security/Services/Login.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Security/Services/Login.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/appsettings.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="SCSS File" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/ClientApp/package-lock.json" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7CFCE80B-C880-4E33-BF4B-1C7318797FB6/6D/RandomNumberGenerator.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Models/Entities/AccountEntity.cs" />
-      <option value="$PROJECT_DIR$/Models/Entities/AuthOptions.cs" />
-      <option value="$PROJECT_DIR$/Models/Entities/BaseEntity.cs" />
-      <option value="$PROJECT_DIR$/Models/Entities/PostEntity.cs" />
-      <option value="$PROJECT_DIR$/Models/Entities/SignInAccount.cs" />
-      <option value="$PROJECT_DIR$/Models/AoolicationContext.cs" />
-      <option value="$PROJECT_DIR$/Models/ApplicationContextFactory.cs" />
-      <option value="$PROJECT_DIR$/Community2.0.csproj" />
-      <option value="$PROJECT_DIR$/BLL/Abstract/PostService.cs" />
-      <option value="$PROJECT_DIR$/Security.cs" />
-      <option value="$PROJECT_DIR$/BLL/Abstract/IPostService.cs" />
-      <option value="$PROJECT_DIR$/Models/Repository/Abstract/IDbRepository.cs" />
-      <option value="$PROJECT_DIR$/Models/Repository/DbRepository.cs" />
-      <option value="$PROJECT_DIR$/appsettings.json" />
-      <option value="$PROJECT_DIR$/BLL/AccountService.cs" />
+      <option value="$PROJECT_DIR$/ClientApp/src/app/fetch-data/fetch-data.component.ts" />
+      <option value="$PROJECT_DIR$/Models/Entities/ForCreatingAccount.cs" />
+      <option value="$PROJECT_DIR$/ClientApp/src/app/nav-menu/nav-menu.component.ts" />
+      <option value="$PROJECT_DIR$/ClientApp/src/app/nav-menu/nav-menu.component.css" />
+      <option value="$PROJECT_DIR$/ClientApp/src/app/nav-menu/nav-menu.component.html" />
+      <option value="$PROJECT_DIR$/ClientApp/src/index.html" />
+      <option value="$PROJECT_DIR$/BLL/Abstract/IAccountService.cs" />
+      <option value="$PROJECT_DIR$/BLL/Abstract/IService.cs" />
       <option value="$PROJECT_DIR$/BLL/PostService.cs" />
+      <option value="$PROJECT_DIR$/Security/Services/Login.cs" />
+      <option value="$PROJECT_DIR$/ClientApp/src/app/create-account/error-email/error-email.component.html" />
+      <option value="$PROJECT_DIR$/ClientApp/src/app/create-account/error-email/error-email.component.css" />
+      <option value="$PROJECT_DIR$/Models/Entities/SignInAccount.cs" />
+      <option value="$PROJECT_DIR$/ClientApp/src/app/InAccountModule/in-account/in-account.component.html" />
+      <option value="$PROJECT_DIR$/ClientApp/src/app/home/home.component.html" />
+      <option value="$PROJECT_DIR$/ClientApp/src/app/login/login.component.html" />
+      <option value="$PROJECT_DIR$/BLL/AccountService.cs" />
+      <option value="$PROJECT_DIR$/Security/Services/PasswordHashService.cs" />
+      <option value="$PROJECT_DIR$/Startup.cs" />
       <option value="$PROJECT_DIR$/Security/Services/Abstract/IJwtService.cs" />
       <option value="$PROJECT_DIR$/Security/Services/JwtService.cs" />
-      <option value="$PROJECT_DIR$/Security/Services/Abstract/ILoginService.cs" />
-      <option value="$PROJECT_DIR$/Security/Services/Login.cs" />
-      <option value="$PROJECT_DIR$/Security/Services/Abstract/IPasswordHashSercice.cs" />
-      <option value="$PROJECT_DIR$/Security/Services/PasswordHashService.cs" />
-      <option value="$PROJECT_DIR$/Models/Repository/PostRepository.cs" />
-      <option value="$PROJECT_DIR$/Models/Repository/AccountRepository.cs" />
-      <option value="$PROJECT_DIR$/ClientApp/package-lock.json" />
-      <option value="$PROJECT_DIR$/ClientApp/package.json" />
-      <option value="$PROJECT_DIR$/ClientApp/tsconfig.json" />
+      <option value="$PROJECT_DIR$/ClientApp/src/app/login/login.component.ts" />
+      <option value="$PROJECT_DIR$/ClientApp/src/app/login/login.component.css" />
+      <option value="$PROJECT_DIR$/ClientApp/src/app/create-account/create-account.component.css" />
+      <option value="$PROJECT_DIR$/ClientApp/src/app/them.scss" />
       <option value="$PROJECT_DIR$/ClientApp/angular.json" />
-      <option value="$PROJECT_DIR$/Controllers/WeatherForecastController.cs" />
+      <option value="$PROJECT_DIR$/ClientApp/src/app/create-account/create-account.component.html" />
+      <option value="$PROJECT_DIR$/ClientApp/src/app/shared/local-storage-sercvice.service.ts" />
+      <option value="$PROJECT_DIR$/ClientApp/src/them.scss" />
+      <option value="$PROJECT_DIR$/ClientApp/src/app/InAccountModule/in-account/in-account.component.ts" />
+      <option value="$PROJECT_DIR$/ClientApp/src/app/app.module.ts" />
+      <option value="$PROJECT_DIR$/ClientApp/src/app/shared/shared.module.ts" />
+      <option value="$PROJECT_DIR$/ClientApp/src/app/create-account/create-account.component.ts" />
+      <option value="$PROJECT_DIR$/ClientApp/src/app/InAccountModule/in-account-module/InAccountRouts.ts" />
+      <option value="$PROJECT_DIR$/ClientApp/src/app/shared/list-of-links.service.ts" />
+      <option value="$PROJECT_DIR$/ClientApp/src/app/InAccountModule/in-account-module/routs.service.ts" />
+      <option value="$PROJECT_DIR$/ClientApp/src/app/shared/routs.service.ts" />
+      <option value="$PROJECT_DIR$/ClientApp/src/app/InAccountModule/in-account-module/routs.ts" />
+      <option value="$PROJECT_DIR$/ClientApp/src/app/InAccountModule/in-account-module/in-account-module.module.ts" />
+      <option value="$PROJECT_DIR$/ClientApp/src/app/shared/guarder.guard.ts" />
+      <option value="$PROJECT_DIR$/ClientApp/src/app/app.component.ts" />
+      <option value="$PROJECT_DIR$/ClientApp/src/app/app.component.html" />
+      <option value="$PROJECT_DIR$/ClientApp/src/app/shared/account-repository.service.ts" />
+      <option value="$PROJECT_DIR$/ClientApp/src/app/InAccountModule/update-account/update-account.component.html" />
+      <option value="$PROJECT_DIR$/Models/Entities/AccountEntity.cs" />
       <option value="$PROJECT_DIR$/Controllers/AccountController.cs" />
-      <option value="$PROJECT_DIR$/ClientApp/src/app/fetch-data/fetch-data.component.ts" />
-      <option value="$PROJECT_DIR$/Startup.cs" />
+      <option value="$PROJECT_DIR$/ClientApp/src/app/InAccountModule/update-account/update-account.component.css" />
+      <option value="$PROJECT_DIR$/ClientApp/src/styles.css" />
+      <option value="$PROJECT_DIR$/ClientApp/src/app/InAccountModule/update-account/update-account.component.ts" />
+      <option value="$PROJECT_DIR$/ClientApp/src/app/shared/interfaces.service.ts" />
+      <option value="$PROJECT_DIR$/ClientApp/src/app/shared/http-service.service.ts" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1vIzlik0Yq2H1rm9Ne30RwhPWbE" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -110,6 +203,11 @@
       <updated>1626264544867</updated>
       <workItem from="1626264605029" duration="57000" />
       <workItem from="1626264711578" duration="14398000" />
+      <workItem from="1626518017161" duration="12743000" />
+      <workItem from="1626591382638" duration="53432000" />
+      <workItem from="1626865696409" duration="390000" />
+      <workItem from="1626943919305" duration="14643000" />
+      <workItem from="1626966224354" duration="85235000" />
     </task>
     <servers />
   </component>
@@ -118,7 +216,20 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
 </project>

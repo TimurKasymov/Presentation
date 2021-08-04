@@ -1,0 +1,37 @@
+
+
+
+<div class="wrapper1">
+  <div class="card" *ngFor="let p of posts">
+    <div class="title">
+      <img class="image"  src="{{url + p.picture}}" alt="Photo of post">
+      <h5>{{p.title}}</h5>
+    </div>
+    <div class="text">
+      <p>{{p.text}}</p>
+    </div>
+    <div class="likes">
+      <div class="icon">
+        <mat-icon (click)="Like(p)">thumb_up_alt</mat-icon>{{p.likes}}
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--
+<div class="wrapper">
+  <mat-card class="example-card" *ngFor="let p of posts">
+  <mat-card-header>
+    <mat-card-title>{{p.title}}</mat-card-title>
+  </mat-card-header>
+  <img class="image"  src="{{url + p.picture}}" alt="Photo of post">
+  <mat-card-content>
+    <p>{{p.text}}</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <mat-icon (click)="Like(p)">thumb_up_alt</mat-icon>{{p.likes}}
+  </mat-card-actions>
+  </mat-card>
+</div>
+-->

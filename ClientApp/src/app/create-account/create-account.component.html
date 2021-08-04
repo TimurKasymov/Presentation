@@ -1,0 +1,41 @@
+
+
+<div сlass="signup"  >
+  <form  #formElement [formGroup]="AccountForm"><mat-card>
+    <mat-card-content >
+        <p>Создайте аккаунт!</p>
+        <mat-form-field color="primary">
+          <mat-label > Имя </mat-label>
+          <input type="text" matInput placeholder="Введте своё имя" value="" formControlName="Name">
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label> Фамилия </mat-label>
+          <input type="text" matInput placeholder="Введте свою фамилию" value="" formControlName="SecondName">
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label  > Расскажите о себе </mat-label>
+          <input type="text" matInput  value="" formControlName="About">
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label> Пароль </mat-label>
+          <input type="text" matInput placeholder="Введте пароль" #pass2 formControlName="Password">
+        </mat-form-field>
+      <mat-form-field>
+        <mat-label> Повторите пароль </mat-label>
+        <input type="text" matInput placeholder="Повторите пароль"  #pass1 formControlName="PasswordA">
+        <mat-label class="InvalidPasswoed" *ngIf="pass2.value !== pass1.value"> Пароли не совпадают </mat-label>
+      </mat-form-field>
+        <mat-form-field>
+          <mat-label> Email </mat-label>
+          <input type="text" matInput  placeholder="kasymovty@gmail.com" formControlName="Email">
+        </mat-form-field>
+          <mat-button-toggle-group name="fontStyle" aria-label="Font Style" formControlName="Role">
+            <mat-button-toggle value="1" >Админ </mat-button-toggle>
+            <mat-button-toggle value="2" >Пользователь</mat-button-toggle>
+          </mat-button-toggle-group>
+        <button mat-button class="createBtn" color="primary" [disabled]="AccountForm.invalid || pass2.value !== pass1.value" (click)="SignIn()">Отправить</button>
+      <button mat-button class="loginBtn" color="accent"  [routerLink]="['/login']">Уже есть аккаунт?</button>
+    </mat-card-content>
+  </mat-card></form>
+</div>
+

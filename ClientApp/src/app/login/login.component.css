@@ -1,0 +1,28 @@
+
+
+mat-card{
+  min-height: 400px;
+  max-width: 300px;
+  text-align: center;
+  margin: auto;
+}
+div{
+  height: 100%;
+}
+
+button{
+  position: relative;
+  top: 20px;
+  min-width: 100px;
+}
+label{
+  text-align: center;
+}
+
+mat-card-content{
+  position: center;
+  height: 100px;
+}
+form{
+  margin: 30px auto;
+}

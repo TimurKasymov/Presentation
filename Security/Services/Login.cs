@@ -15,10 +15,17 @@ namespace Community2._0.Security.Services
         {
             _context = context;
         }
+        /// <summary>
+        /// Возвращает аккаунт AccountEntity
+        /// </summary>
+        /// <param name="signAccount"></param>
+        /// <returns></returns>
         public AccountEntity LoginService(SignInAccountEntity signAccount)
         {
-            var account = _context.Get(signAccount.Email, signAccount.Password);
+            var account = _context.Get(signAccount.Email, signAccount.Password, false);
             return account;
         }
+
+
     }
 }

@@ -1,0 +1,28 @@
+<div сlass="signup"  >
+  <form  #formElement [formGroup]="AccountForm"><mat-card>
+    <mat-card-content >
+      <mat-form-field color="primary">
+        <mat-label > Имя </mat-label>
+        <input type="text" matInput placeholder="Введте своё имя"  formControlName="Name">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label> Фамилия </mat-label>
+        <input type="text" matInput placeholder="Введте свою фамилию"  formControlName="Surname">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label  > Расскажите о себе </mat-label>
+        <input type="text" matInput   formControlName="About">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label> Старый пароль </mat-label>
+        <input type="text" matInput placeholder="Введте пароль" #pass2 formControlName="PastPassword">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label> Новый пароль </mat-label>
+        <input type="text" matInput placeholder="Введте пароль" #pass2 formControlName="Password">
+      </mat-form-field>
+      <button mat-button class="createBtn" color="primary" [disabled]="AccountForm.invalid" (click)="SignIn()">Изменить</button>
+      <div #note *ngIf="accountIsChenged">{{accountIsChenged}}</div>
+    </mat-card-content>
+  </mat-card></form>
+</div>

@@ -1,0 +1,20 @@
+
+
+
+<div сlass="signup"  >
+  <form  #formElement [formGroup]="AccountForm"><mat-card>
+    <mat-card-content>
+      <label>Вход в аккаунт</label>
+      <mat-form-field>
+        <mat-label> Пароль </mat-label>
+        <input type="text" matInput placeholder="Введте пароль" #pass2 formControlName="Password">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label> Email </mat-label>
+        <input type="text" matInput  value="sobaka@gmail.com" formControlName="Email">
+      </mat-form-field><br>
+      <button mat-raised-button color="accent" [disabled]="AccountForm.invalid" (click)="Login()">Войти</button>
+      <br><br><label *ngIf="IsNotAuthenticated">Аккаунт не найден</label>
+    </mat-card-content>
+  </mat-card></form>
+</div>

@@ -28,7 +28,7 @@ namespace Community2._0.Models.Repository
 
         public IQueryable<TEntity> GetAll()
         {
-            return _dbContext.Set<TEntity>();
+            return _dbContext.Set<TEntity>().Where(e => e.IsActive).AsNoTracking<TEntity>();
         }
 
         public IQueryable<TEntity> Get(Func<TEntity, bool> predicate)

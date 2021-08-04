@@ -16,6 +16,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
+using System.Threading.Tasks;
 
 namespace Community2._0
 {
@@ -31,7 +32,16 @@ namespace Community2._0
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddCors();
+            services.AddCors(options =>
+            {
+                options.AddDefaultPolicy(builder =>
+                {
+                    builder.AllowAnyOrigin();
+                    builder.AllowAnyMethod();
+                    builder.AllowAnyHeader();
+                }
+                );
+            });
             services.AddControllers();
             var connection = Configuration.GetConnectionString("Main");
             services.AddControllersWithViews();
@@ -41,6 +51,7 @@ namespace Community2._0
             {
                 options.UseNpgsql(connection);
             });
+
             var authOptions = authOptionObject.Get<AuthOptions>();
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>
@@ -63,7 +74,6 @@ namespace Community2._0
             services.AddScoped<IDbRepository<PostEntity>, PostRepository>();
             services.AddScoped<IService<AccountEntity>, AccountService>();
             services.AddScoped<IService<PostEntity>, PostService>();
-            services.AddTransient<ILoginService, Login>();
             services.AddTransient<IJwtService, JwtService>();
             services.AddTransient<IPasswordHashSercice, PasswordHasherService>();
             // In production, the Angular files will be served from this directory
@@ -95,7 +105,10 @@ namespace Community2._0
             }
 
             app.UseRouting();
-            app.UseCors(builder => builder.AllowAnyOrigin());
+            app.UseCors();
+            app.UseAuthentication();
+            app.UseAuthorization();
+            
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
